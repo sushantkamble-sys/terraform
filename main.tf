@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "web" {
-  ami = "ami-0c4f7023847b90238"
+  ami = "ami-09d56f8956ab235b3"
   instance_type = "t2.micro"
   vpc_security_group_ids = ["sg-082db47b199e5f302"]
   key_name = "jenkins"
