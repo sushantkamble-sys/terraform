@@ -21,7 +21,7 @@ data "aws_ami" "ubuntu" {
 resource "aws_instance" "web" {
   ami = data.aws_ami.ubuntu.id
   instance_type = "t3.micro"
-  vpc_security_group_ids = "sg-020583dc4253cdc39"
+  security_groups = "myjen"
   key_name = "jenkins"
   tags = {
     Name = "jenkins"
